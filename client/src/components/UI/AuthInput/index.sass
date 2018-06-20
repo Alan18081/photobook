@@ -1,0 +1,35 @@
+@import '../../../styles/vars'
+
+.AuthInput
+  padding: 8px 20px
+  border-bottom: 1px solid $gray
+  display: flex
+  align-items: center
+
+.icon
+  fill: $gray
+  order: -1
+  transition: all .5s ease
+
+.field
+  border: none
+  font-size: 16px
+  font-family: $fontLight
+  padding: 0 10px
+  flex-grow: 1
+  &:focus + .Input__icon
+    fill: #28bbf0
+
+.resetField
+  border-top: 1px solid $gray
+
+.reset
+  margin-bottom: 20px
+
+.error
+  color: $red
+
+.inputError
+  border-color: $red
+  .icon
+    fill: $red

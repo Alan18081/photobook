@@ -1,0 +1,27 @@
+@import '../../styles/smart-grid'
+
+.container
+  +wrapper()
+  padding-top: 60px
+  padding-bottom: 60px
+  button
+    margin: 20px auto 0
+  +sm-block
+    padding: 60px 10px
+
+.list
+  +row-flex()
+
+.itemEnter
+  opacity: 0
+  transition: all .4s ease
+
+.itemEnterActive
+  opacity: 1
+
+.itemExit
+  opacity: 1
+  transition: all .4s ease
+
+.itemExitActive
+  opacity: 0

@@ -1,0 +1,112 @@
+@import '../../styles/vars'
+
+.Auth
+  height: 100vh
+  background-image: url('../../assets/img/auth-bg.jpg')
+  background-size: cover
+  display: flex
+  justify-content: center
+  align-items: center
+  color: #ffffff
+  text-align: center
+
+.loader
+  position: absolute
+  top: 0
+  left: 0
+  background: rgba(#000,.25)
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+
+.title
+  font-family: $fontBold
+  font-size: 42px
+  margin-bottom: 20px
+
+.caption
+  max-width: 520px
+  margin-bottom: 35px
+
+.form
+  background-color: #fff
+  border-radius: 15px
+  max-width: 280px
+  margin: 0 auto
+  padding-bottom: 15px
+  color: $black
+  animation: showLogin 1s forwards
+
+.controls
+  margin-top: 20px
+  padding: 0 20px
+  text-align: left
+  font-size: 14px
+
+.reset
+  margin: 8px 0 15px
+  display: block
+
+.copyrights
+  text-align: center
+  font-family: $fontLight
+  width: 100%
+  position: absolute
+  bottom: 10px
+  left: 0
+
+.info
+  margin: 10px 0 15px
+
+.resetPasswordTitle
+  font-family: $fontSemi
+  text-align: left
+  padding-top: 20px
+  padding-left: 20px
+  font-size: 14px
+
+.resetPasswordText
+  text-align: left
+  padding: 15px 20px
+  font-size: 14px
+  
+.notification
+  background-color: rgba($blue,.5)
+  color: $black
+  padding: 8px 10px
+  border-radius: 4px
+  margin: 10px 20px 15px
+
+.links
+  text-align: center
+  margin-top: 10px
+
+.error
+  background-color: #ffe3e3
+  padding: 8px 10px
+  border-radius: 4px
+  margin: 20px 20px 15px
+
+.head
+  animation: showAuthTitle .8s 1 forwards
+
+.mainBtn
+  width: 100%
+
+@keyframes showLogin
+  from
+    opacity: 0
+    transform: rotateY(-180deg)
+  to
+    opacity: 1
+    transform: rotateY(0deg)
+
+@keyframes showAuthTitle
+  from
+    opacity: 0
+    transform: translateY(-100%)
+  to
+    opacity: 1
+    transform: translateY(0)

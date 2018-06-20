@@ -1,0 +1,49 @@
+@import '../../styles/vars'
+@import '../../styles/smart-grid'
+
+.bg
+  padding: 10% 0
+  +sm-block
+    padding: 20px 0
+
+.container
+  max-width: 680px
+  margin: 0 auto
+
+.close
+  position: absolute
+  top: -40px
+  right: 0
+  cursor: pointer
+  svg
+    fill: $gray
+    transition: all .5s ease
+  &:hover
+    svg
+      fill: $black
+
+.arrowIcon
+  fill: $gray
+  transition: all .5s ease
+
+.arrowLeft
+  top: 20%
+  left: -30px
+  +sm-block
+    display: none
+  &:before
+    display: none
+  &:hover
+    .arrowIcon
+      fill: $black
+
+.arrowRight
+  top: 20%
+  right: -30px
+  +sm-block
+    display: none
+  &:hover
+    .arrowIcon
+      fill: $black
+  &:before
+    display: none

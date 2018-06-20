@@ -1,0 +1,35 @@
+@import '../../styles/smart-grid'
+@import '../../styles/vars'
+
+.search
+  background-color: #e8e8e8
+
+.searchContainer
+  padding: 10px 0
+  +wrapper()
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  +xs-block
+    flex-direction: column
+
+.stats
+  font-family: $fontSemi
+  font-size: 21px
+  margin-bottom: 40px
+
+.resetBtn
+  cursor: pointer
+  border: none
+  background: none
+  margin-right: 15px
+  font-family:  $fontSemi
+  color: $blue
+  transition: all .5s ease
+  font-size: 16px
+  +xs-block
+    margin-right: 0
+    margin-top: 10px
+    order: 1
+  &:hover
+    color: $blueHover

@@ -1,0 +1,66 @@
+@import '../../styles/smart-grid'
+@import '../../styles/vars'
+
+.container
+  display: flex
+  justify-content: flex-end
+  align-items: center
+
+.preview
+  min-width: 100px
+  display: flex
+  justify-content: flex-end
+  margin-right: 20px
+  +xs-block
+    min-width: initial
+
+.image
+  width: 50px
+  height: 50px
+  position: relative
+  border-radius: 50%
+  overflow: hidden
+  img
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%) scale(1.7)
+
+.controls
+  width: 512px
+
+.controlsContent
+  display: flex
+
+.input
+  position: relative
+  cursor: pointer
+  margin-right: 20px
+  button
+    min-width: 175px
+  +xs-block
+    margin-right: 0
+  input
+    cursor: pointer
+    opacity: 0
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+
+.info
+  max-width: 250px
+  flex-shrink: 1
+  +xs-block
+    display: none
+
+.background
+  background-size: cover
+  width: 50px
+  height: 50px
+  border-radius: 50%
+
+.error
+  color: $red
+  margin-top: 10px

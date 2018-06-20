@@ -1,0 +1,52 @@
+@import '../../styles/vars'
+
+.container
+  background-color: $lightGray
+  padding-top: 20px
+  padding-bottom: 20px
+  border-radius: 0 0 4px 4px
+
+.toggle
+  cursor: pointer
+  background: none
+  border: none
+  display: flex
+  align-items: center
+  margin-left: 20px
+  &:hover
+    .toggleIcon
+      fill: $black
+
+.toggleHidden
+  transform: rotate(0)
+
+.toggleText
+  margin-right: 10px
+  font-family: $fontSemi
+  font-size: 16px
+
+.toggleIcon
+  fill: $gray
+  transition: all .5s ease
+  transform: rotate(-90deg)
+  width: 14px
+  height: 12px
+
+.contentEnter
+  opacity: 0
+  height: 0
+  transition: all .5s ease
+
+.contentEnterActive
+  height: auto
+  opacity: 1
+
+.contentExit
+  height: auto
+  opacity: 1
+  transition: all .5s ease
+
+.contentExitActive
+  height: 0
+  opacity: 0
+

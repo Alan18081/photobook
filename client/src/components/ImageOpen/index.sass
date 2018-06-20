@@ -1,0 +1,62 @@
+@import '../../styles/vars'
+
+.container
+  border-radius: 4px
+  background-color: #fff
+  position: relative
+
+.image
+  border-radius: 4px 4px 0 0
+  overflow: hidden
+
+.arrowLeft
+  position: absolute
+  top: 40px
+  left: -40px
+
+.arrowRight
+  position: absolute
+  top: 40px
+  right: -40px
+
+.info
+  padding: 20px 20px 35px
+
+.head
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 20px
+
+.likes
+  display: flex
+  padding: 8px 18px
+  font-family: $fontBold
+  border-radius: 40px
+  color: $red
+  border: 1px solid $red
+  align-items: center
+  height: 45px
+  transition: all .5s ease
+  cursor: pointer
+  &:hover
+    box-shadow: 2px 1px 5px rgba(#000,.55)
+
+.likesActive
+  color: #ffffff
+  background: $red
+  .likesIcon
+    fill: #fff
+  &:hover
+    background: $redHover
+
+
+
+.likesIcon
+  fill: $red
+  margin-right: 10px
+
+.title
+  font-size: 21px
+  font-family: $fontSemi
+  margin-bottom: 15px

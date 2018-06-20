@@ -1,0 +1,229 @@
+@import '../../styles/smart-grid'
+@import '../../styles/vars'
+
+.container
+  +row-flex()
+  +wrapper()
+  padding: 20px 0 60px
+  overflow: hidden
+  position: relative
+  z-index: 20
+
+.imageWrapper
+  +col()
+  +size(2)
+  +size-sm(3)
+  +size-xs(12)
+  padding-top: 35px
+
+.image
+  width: 126px
+  height: 126px
+  margin: 0 auto
+  position: relative
+  border-radius: 50%
+  border: 2px solid #ffffff
+  overflow: hidden
+  +sm-block
+    width: 100px
+    height: 100px
+  +xs-block
+    width: 55px
+    height: 55px
+    margin: 0 auto
+  img
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%) scale(1.7)
+
+.imageEdit
+  border-color: transparent
+
+
+.imageChange
+  border-radius: 50%
+  background: none
+  border: 3px solid $gray
+  cursor: pointer
+  color: $gray
+  position: absolute
+  z-index: 2
+  background: rgba(#000,.8)
+  width: 100%
+  height: 100%
+  transition: all .5s ease
+  font-size: 16px
+  display: flex
+  justify-content: center
+  flex-direction: column
+  align-items: center
+  &:hover
+    border-color: #ffffff
+    color: #ffffff
+
+
+.imageChangeIcon
+  fill: $gray
+  transition: all .5s ease
+  margin-bottom: 10px
+  &:hover
+    fill: #fff
+  +sm-block
+    width: 30px
+    margin-bottom: 5px
+  +xs-block
+    width: 20px
+    margin-bottom: 0
+
+.imageChangeText
+  text-align: center
+  color: $gray
+  transition: all .5s ease
+  font-family: $fontSemi
+  +xs-block
+    display: none
+
+.imageChangeInput
+  position: absolute
+  width: 100%
+  height: 100%
+  opacity: 0
+  cursor: pointer
+  &:hover + .UserEdit__imageChangeIcon
+    fill: #ffffff
+  &:hover ~ .UserEdit__imageChangeText
+    color: #ffffff
+
+.info
+  +col()
+  +size(8)
+  +size-sm(7)
+  +size-xs(12)
+  +xs-block
+    text-align: center
+  flex-grow: 1
+  padding-top: 35px
+  color: #ffffff
+
+.title
+  font-size: 21px
+  font-family: $fontBold
+  margin-bottom: 20px
+
+.description
+  font-family: $fontLight
+  margin-bottom: 30px
+
+.social
+  display: flex
+  +xs-block
+    justify-content: center
+
+.socialItem
+  margin-right: 10px
+  cursor: pointer
+  svg
+    fill: #d2d6d5
+    transition: all .5s ease
+  &:hover
+    svg
+      fill: #fff
+
+.links
+  +col()
+  +size(1)
+  +size-sm(2)
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+
+.btnEdit
+  +xs-block
+    position: absolute !important
+    left: 10px
+    top: 15px
+  div
+    +xs-block
+      left: 0
+      justify-content: flex-end
+      p
+        order: -1
+        margin-left: 0
+        margin-right: 10px
+  &:hover
+    div
+      width: 160px
+
+.btnExit
+  +xs-block
+    position: absolute !important
+    right: 10px
+    top: 15px
+  &:hover
+    div
+      width: 120px
+
+.btnHome
+  +xs-block
+    position: absolute !important
+    right: 10px
+    top: 15px
+  &:hover
+    div
+      width: 150px
+
+.controls
+  padding: 10px 0
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  +wrapper()
+
+.headerBg
+  background-color: rgba(#000,.8)
+
+.contentBg
+  background-color: rgba(#fff,.9)
+
+.cancel
+  margin-right: 20px
+  color: $blue
+  background: none
+  border: none
+  font-family: $fontSemi
+  cursor: pointer
+  transition: all .5s ease
+  &:hover
+    color: $blueHover
+
+.bgChangeWrapper
+  +col()
+  +size(2)
+  display: flex
+  justify-content: center
+  align-items: center
+  +xs-block
+    margin-top: 20px
+    width: 100%
+
+.bgChange
+  display: flex
+  flex-direction: column
+  align-items: center
+  position: relative
+  transition: all .5s ease
+  &:hover
+    .imageChangeIcon
+      fill: #fff
+    .imageChangeText
+      color: #fff
+  +xs-block
+    .imageChangeIcon
+      width: 40px
+      margin-bottom: 20px
+    .imageChangeText
+      display: block
+
+
+

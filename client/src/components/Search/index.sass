@@ -1,0 +1,32 @@
+@import '../../styles/smart-grid'
+@import '../../styles/vars'
+
+.field
+  position: relative
+  max-width: 380px
+  width: 100%
+  animation: showSearch .8s forwards
+
+@keyframes showSearch
+  from
+    transform: translateX(300%)
+  to
+    transform: translateX(0)
+
+.input
+  padding: 12px 12px 12px 50px
+  border-radius: 40px
+  border: 1px solid transparent
+  font-size: 16px
+  font-family: $fontLight
+  width: 100%
+  &:focus
+    border-color: $blue
+  &:focus + .Search__icon
+    fill: $blue
+
+.icon
+  position: absolute
+  top: 15px
+  left: 20px
+  fill: #878787

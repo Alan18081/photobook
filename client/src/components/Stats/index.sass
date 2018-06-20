@@ -1,0 +1,36 @@
+@import '../../styles/vars'
+@import '../../styles/smart-grid'
+
+.container
+  background-color: rgba($lightGray,.9)
+  position: relative
+  padding: 25px 0
+  display: flex
+  justify-content: center
+
+.item
+  margin-right: 38px
+  font-family: $fontSemi
+  display: flex
+  align-items: center
+  &:last-child
+    margin-right: 0
+
+.number
+  font-family: $fontBold
+  display: inline-block
+  margin-right: 5px
+  +xs-block
+    margin-right: 0
+    margin-left: 5px
+
+.name
+  +xs-block
+    display: none
+
+.icon
+  display: none
+  fill: $black
+  width: 20px
+  +xs-block
+    display: block

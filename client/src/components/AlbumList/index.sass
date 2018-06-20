@@ -1,0 +1,45 @@
+@import '../../styles/smart-grid'
+@import '../../styles/vars'
+
+.AlbumList
+  background: $lightGray
+  padding: 60px 0
+
+.container
+  +wrapper()
+  +sm-block
+    padding: 0 20px
+
+.head
+  position: relative
+  margin-bottom: 20px
+  h2
+    margin-bottom: 0
+
+.addAlbum
+  position: absolute
+  right: 5px
+  top: 10px
+  box-shadow: 1px 1px 2px rgba(#000,.25)
+  +xs-block
+    top: 0
+  &:hover
+    div
+      width: 140px
+
+.list
+  +row-flex()
+
+.itemEnter
+  opacity: 0
+  transition: all .4s ease
+
+.itemEnterActive
+  opacity: 1
+
+.itemExit
+  opacity: 1
+  transition: all .4s ease
+
+.itemExitActive
+  opacity: 0

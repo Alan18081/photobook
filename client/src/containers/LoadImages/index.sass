@@ -1,0 +1,104 @@
+@import '../../styles/vars'
+@import '../../styles/smart-grid'
+
+.content
+  padding: 40px 20px 20px
+
+.head
+  display: flex
+  margin-bottom: 40px
+
+.title
+  font-family: $fontSemi
+  margin-right: 20px
+
+.loader
+  border-radius: 8px
+  border: 2px dashed $gray
+  background: $lightGray
+  min-height: 330px
+  position: relative
+  padding: 17px
+
+.loaderInput
+  opacity: 0
+  position: absolute
+  width: 100%
+  height: 100%
+
+.loaderCaption
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  max-width: 200px
+
+.loaderIcon
+  fill: $gray
+  display: block
+  margin: 0 auto 18px
+
+.loaderText
+  text-align: center
+
+.loaderTrigger
+  font-family: $fontSemi
+  color: $blue
+  transition: all .5s ease
+  cursor: pointer
+  &:hover
+    color: $blueHover
+
+.loadedList
+  display: flex
+  flex-wrap: wrap
+  margin-left: -2%
+
+.loadedItem
+  width: 23%
+  border-radius: 4px
+  position: relative
+  margin-left: 2%
+  margin-bottom: 20px
+  &:before
+    content: ''
+    display: block
+    padding-top: 100%
+
+.loadedImgWrapper
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  overflow: hidden
+  border-radius: 8px
+
+.loadedImg
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%) scale(1.5)
+
+.loadedItemClose
+  cursor: pointer
+  position: absolute
+  top: 0
+  right: 0
+  transform: translate(50%,-50%)
+  width: 20px
+  height: 20px
+  display: flex
+  justify-content: center
+  align-items: center
+  border: 3px solid $lightGray
+  border-radius: 50%
+  background: $red
+  transition: all .5s ease
+  &:hover
+    background: $redHover
+
+.loadedItemIcon
+  fill: #fff
+  width: 8px
+  height: 8px

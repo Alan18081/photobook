@@ -1,0 +1,57 @@
+@import '../../styles/smart-grid'
+@import '../../styles/vars'
+
+.container
+  +wrapper()
+  padding-top: 20px
+  padding-bottom: 60px
+  position: relative
+
+.caption
+  text-align: center
+  color: #ffffff
+  
+.title
+  font-size: 21px
+  margin-bottom: 20px
+  font-family: $fontSemi
+
+.description
+  font-family: $fontLight
+  max-width: 700px
+  margin: 0 auto
+
+.links
+  position: absolute
+  right: 0
+  top: 20px
+  +xs-block
+    position: static
+
+.btnHome
+  +xs-block
+    position: absolute
+    left: 5px
+    bottom: 0
+  div
+    +xs-block
+      left: 0
+      justify-content: flex-end
+      p
+        order: -1
+        margin-left: 0
+        margin-right: 10px
+  &:hover
+    div
+      width: 150px
+
+.btnEdit
+  +xs-block
+    position: absolute
+    right: 5px
+    bottom: 0
+  &:hover
+    div
+      width: 170px
+
+
