@@ -64,7 +64,8 @@ module.exports = app => {
         const album = await Album.findOne({
           _id: newAlbum.id
         }).populate('author');
-        console.log(album);
+        backgroundImg.author = req.user;
+        console.log(backgroundImg);
         res.send({
           album,
           image: backgroundImg

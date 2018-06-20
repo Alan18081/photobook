@@ -38,15 +38,7 @@ module.exports = app => {
 
   app.get('/api/current_user', async (req,res) => {
     try {
-      if(req.user) {
-        const user = await User.findOne({
-          _id: req.user._id
-        });
-        res.send(user);
-      }
-      else {
-        res.send(false);
-      }
+      res.send(req.user || false);
     }
     catch(error) {
       console.log(error);
