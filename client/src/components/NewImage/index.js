@@ -19,7 +19,7 @@ const newImage = ({show,image,name,albumName,author,commentsNumber,likesNumber})
       </div>
       <div className={classes.info}>
         <Link to={`/users/${author.get('_id')}`} className={classes.user}>
-          <img src={`/uploads/${author.get('avatar')}`} alt=""/>
+          <img src={author.get('avatarUrl')} alt=""/>
           <div className={classes.userOverlay}>
             <MoreIcon/>
           </div>

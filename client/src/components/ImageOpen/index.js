@@ -43,7 +43,7 @@ const imageOpen = ({userAlbum,user,author,id,image,likes,title,description,onLik
         imageId={id}
         comments={comments}
         username={user.get('username')}
-        avatar={user.get('avatar')}
+        avatar={user.get('avatarUrl')}
       />
     </div>
   );

@@ -103,7 +103,7 @@ class ResultsPage extends Component {
               <div className={classes.user}>
                 <UserBlock
                   dark
-                  avatar={user.get('avatar')}
+                  avatar={user.get('avatarUrl')}
                   username={user.get('username')}
                 />
               </div>

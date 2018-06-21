@@ -90,7 +90,9 @@ class AlbumEdit extends Component {
               <FormItemImage
                 btnText="Загрузить фон"
                 maxSize={1024}
-                src={this.state.albumImageSrc || `/uploads/${defaultBackground}`}
+                src={this.state.albumImageSrc
+                || defaultBackground
+                || 'https://res.cloudinary.com/dkvyhy1hr/image/upload/v1529502028/no_photo.jpg'}
                 changed={this.changeAlbumImageHandler}
               />
             </div>

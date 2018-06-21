@@ -47,7 +47,7 @@ class AddAlbum extends Component {
     }
   };
   render() {
-    const {handleSubmit,defaultBackground,hideCreateAlbum} = this.props;
+    const {handleSubmit,hideCreateAlbum} = this.props;
     return (
       <Panel title="Добавить альбом" close={hideCreateAlbum}>
         <form

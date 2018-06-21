@@ -111,7 +111,7 @@ class AlbumPage extends Component {
       content = <AlbumEdit
         album={album}
         hideEditAlbum={this.handleEditModeHandler}
-        defaultBackground={this.props.album && this.props.album.get('background')}
+        defaultBackground={this.props.album && this.props.album.get('backgorundUrl')}
         showDelModal={this.showDeletedModalHandler}
       />
     }
