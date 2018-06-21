@@ -1,6 +1,5 @@
 export default (size,query) => {
   const sizeArr = String(size).split('');
-  console.log(sizeArr);
   const lastIndex = sizeArr.length - 1;
   let string = 'результатов';
   if(Number(sizeArr[lastIndex]) === 1) {

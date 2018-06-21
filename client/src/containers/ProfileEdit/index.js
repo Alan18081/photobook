@@ -74,14 +74,14 @@ class ProfileEdit extends Component {
               error={this.state.avatarError}
               btnText="Загрузить аватар"
               maxSize={512}
-              src={this.state.avatarSrc || `/uploads/${initialValues.avatar}`}
+              src={this.state.avatarSrc || initialValues.avatarUrl}
               changed={this.changeAvatarHandler}
             />
             <FormItemImage
               error={this.state.backgroundError}
               btnText="Загрузить фон"
               maxSize={1024}
-              src={this.state.backgroundSrc || `/uploads/${initialValues.background}`}
+              src={this.state.backgroundSrc || initialValues.backgroundUrl}
               changed={this.changeBackgroundHandler}
             />
           </div>

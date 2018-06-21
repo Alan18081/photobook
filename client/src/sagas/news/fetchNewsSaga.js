@@ -13,7 +13,6 @@ export function* fetchNewsSaga() {
   yield takeLatest(FETCH_NEWS, function* ({payload}) {
     try {
       const {data} = yield call(axios.get,`/api/images/news/offset/${payload}`);
-      console.log(data);
       const newsIds = data.images.map(({_id}) => _id);
       data.images.reverse();
       yield put(fetchImagesSuccess(data.images));

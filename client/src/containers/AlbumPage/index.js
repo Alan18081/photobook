@@ -34,7 +34,6 @@ class AlbumPage extends Component {
     if(this.props.userAlbum) {
       this.props.onFetchUser(userId);
     }
-    console.log(albumId,userId);
     this.props.onGetAlbum(albumId,this.props.userAlbum);
     this.props.onResetAlbumOffset();
   }
@@ -93,7 +92,6 @@ class AlbumPage extends Component {
       likesNumber,
       commentsNumber
     } = this.props;
-    console.log(album);
     let content = null;
     if(!user || !album || !images) {
       content = (
