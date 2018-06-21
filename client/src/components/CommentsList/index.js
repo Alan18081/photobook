@@ -53,7 +53,7 @@ class CommentsList extends Component {
             {comments.size > 0 && comments.reverse().map(comment => (
                 <Comment
                   key={Math.random()}
-                  avatar={comment.get('sender').get('avatar')}
+                  avatar={comment.get('sender').get('avatarUrl')}
                   username={comment.get('sender').get('username')}
                   text={comment.get('text')}
                 />
