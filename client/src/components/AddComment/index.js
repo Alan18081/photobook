@@ -14,7 +14,7 @@ const addCommentItem = ({handleSubmit,username,avatar,onAddComment,imageId}) => 
   return (
     <form onSubmit={handleSubmit(addCommentHandler)} className={classes.container}>
       <div className={classes.avatar}>
-        <img src={avatar} alt="Фото"/>
+        <img className={classes.avatarImage} src={avatar} alt="Фото"/>
       </div>
       <div className={classes.content}>
         <div className={classes.username}>{username}</div>
